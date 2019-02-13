@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B66297E1221164CB0048763C /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66297E0221164CB0048763C /* Wage.swift */; };
+		B66297E22211664A0048763C /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66297E0221164CB0048763C /* Wage.swift */; };
 		B66D16B222114E96004413A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66D16B122114E96004413A0 /* AppDelegate.swift */; };
-		B66D16B422114E96004413A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66D16B322114E96004413A0 /* ViewController.swift */; };
+		B66D16B422114E96004413A0 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66D16B322114E96004413A0 /* MainVC.swift */; };
 		B66D16B722114E96004413A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66D16B522114E96004413A0 /* Main.storyboard */; };
 		B66D16B922114E98004413A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B66D16B822114E98004413A0 /* Assets.xcassets */; };
 		B66D16BC22114E98004413A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66D16BA22114E98004413A0 /* LaunchScreen.storyboard */; };
 		B66D16C722114E98004413A0 /* windows_shopperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66D16C622114E98004413A0 /* windows_shopperTests.swift */; };
 		B66D16D222114E99004413A0 /* windows_shopperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66D16D122114E99004413A0 /* windows_shopperUITests.swift */; };
+		B66D16E222115148004413A0 /* CurrencyTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66D16E122115148004413A0 /* CurrencyTxtField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B66297E0221164CB0048763C /* Wage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wage.swift; sourceTree = "<group>"; };
 		B66D16AE22114E96004413A0 /* windows-shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "windows-shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66D16B122114E96004413A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B66D16B322114E96004413A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B66D16B322114E96004413A0 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		B66D16B622114E96004413A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B66D16B822114E98004413A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B66D16BB22114E98004413A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,7 @@
 		B66D16CD22114E99004413A0 /* windows-shopperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "windows-shopperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66D16D122114E99004413A0 /* windows_shopperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = windows_shopperUITests.swift; sourceTree = "<group>"; };
 		B66D16D322114E99004413A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B66D16E122115148004413A0 /* CurrencyTxtField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTxtField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B66297DF221164B40048763C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B66297E0221164CB0048763C /* Wage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		B66D16A522114E96004413A0 = {
 			isa = PBXGroup;
 			children = (
@@ -97,8 +110,10 @@
 		B66D16B022114E96004413A0 /* windows-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				B66297DF221164B40048763C /* Model */,
+				B66D16E022114FDE004413A0 /* Views */,
+				B66D16DF22114EE6004413A0 /* Controller */,
 				B66D16B122114E96004413A0 /* AppDelegate.swift */,
-				B66D16B322114E96004413A0 /* ViewController.swift */,
 				B66D16B522114E96004413A0 /* Main.storyboard */,
 				B66D16B822114E98004413A0 /* Assets.xcassets */,
 				B66D16BA22114E98004413A0 /* LaunchScreen.storyboard */,
@@ -123,6 +138,22 @@
 				B66D16D322114E99004413A0 /* Info.plist */,
 			);
 			path = "windows-shopperUITests";
+			sourceTree = "<group>";
+		};
+		B66D16DF22114EE6004413A0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B66D16B322114E96004413A0 /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B66D16E022114FDE004413A0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B66D16E122115148004413A0 /* CurrencyTxtField.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +287,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B66D16B422114E96004413A0 /* ViewController.swift in Sources */,
+				B66D16E222115148004413A0 /* CurrencyTxtField.swift in Sources */,
+				B66297E1221164CB0048763C /* Wage.swift in Sources */,
+				B66D16B422114E96004413A0 /* MainVC.swift in Sources */,
 				B66D16B222114E96004413A0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B66D16C722114E98004413A0 /* windows_shopperTests.swift in Sources */,
+				B66297E22211664A0048763C /* Wage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
